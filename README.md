@@ -26,3 +26,35 @@ optional arguments:
   --strip [CHAR/STRING], -s [CHAR/STRING]
                         Strips given character or string from output
 ```
+Based on configuration file, script filters out selected headers into an output file.
+
+# Configuration File
+
+A sample configuration file is shown as below ;
+```
+# csvParse.conf
+# This file is used for configurative directives for csvParse script.
+#
+# You should just add HEADER/COLUMN names that exists in related CSV file line by line
+#
+# Example:
+# IMPU
+# CORE IP
+# CORE PORT
+# CORE TRP
+# IMPLICIT IMPUS
+# PBXTYPE
+#
+# Script will read this config file and ONLY filters out these HEADER/COLUMs
+#
+IMPU
+REMOTE IP
+REMOTE PORT
+LOCAL IP
+NETWORK ID
+USER AGENT
+BSID
+```
+
+
+
